@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Video Fullscreen</title>
+    <style>
+        /* Rimuove ogni spazio e imposta lo sfondo nero */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        /* Il video occupa tutto lo schermo disponibile */
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain; /* Usa 'cover' se vuoi che il video riempia lo schermo tagliando i bordi */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <video playsinline autoplay muted loop>
+        <source src="video/videobolla_scritte_last0001-0250.webm" type="video/webm">
+        Il tuo browser non supporta il formato video.
+    </video>
+
+</body>
+</html>
